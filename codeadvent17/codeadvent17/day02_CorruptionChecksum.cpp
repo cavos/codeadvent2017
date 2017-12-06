@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "CorruptionChecksum.h"
+#include "day02_CorruptionChecksum.h"
 
 #include <string>
 #include <sstream>

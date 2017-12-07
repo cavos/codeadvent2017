@@ -16,6 +16,7 @@ int main()
 	std::cout << "day02: " << CorruptionChecksum::compute(CorruptionChecksum::testinput) << "\n";
 	std::cout << "day03: " << SpiralMemory::compute(361527) << "\n";
 	std::cout << "day04: " << HighEntropyPassphrases::compute(HighEntropyPassphrases::testinput) << "\n";
+
 	system("pause");
 
     return 0;

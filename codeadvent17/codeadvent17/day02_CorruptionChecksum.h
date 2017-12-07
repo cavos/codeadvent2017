@@ -1,6 +1,7 @@
 #pragma once
 
 #include <istream>
+#include <sstream>
 
 class CorruptionChecksum
 {
@@ -8,6 +9,8 @@ public:
 	CorruptionChecksum();
 	~CorruptionChecksum();
 
-	unsigned compute(std::istream& input);
+	static unsigned compute(std::istream& input);
+
+	static std::stringstream testinput;
 };
 

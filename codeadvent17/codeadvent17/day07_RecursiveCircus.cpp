@@ -60,8 +60,7 @@ std::string RecurisveCircus::compute(std::istream & input)
 }
 
 bool RecurisveCircus::isOnBlackList(const std::vector<std::string>& blacklist, const std::string& name) {
-	auto it = std::binary_search(blacklist.begin(), blacklist.end(), name);
-	return (it != blacklist.end());
+	return std::binary_search(blacklist.begin(), blacklist.end(), name);
 }
 
 RecurisveCircus::TowerNode RecurisveCircus::makeNode(std::smatch & match, std::regex& regex)

@@ -11,6 +11,7 @@
 #include "day05_TwistyTrampolines.h"
 #include "day06_MemoryReallocation.h"
 #include "day07_RecursiveCircus.h"
+#include "day08_RegisterProcessor.h"
 
 int main()
 {
@@ -22,7 +23,7 @@ int main()
 	std::cout << "day05: " << TwistyTrampolines::compute(TwistyTrampolines::testinput) << "\n";
 	std::cout << "day06: " << MemoryReallocation::compute(MemoryReallocation::testinput) << "\n";
 	std::cout << "day07: " << RecurisveCircus::compute(RecurisveCircus::testinput2) << "\n";
-
+	std::cout << "day08: " << RegisterProcessor::compute(RegisterProcessor::inputtest) << "\n";
 	//system("pause");
 
     return 0;

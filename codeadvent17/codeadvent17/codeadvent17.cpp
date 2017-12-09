@@ -8,6 +8,9 @@
 #include "day02_CorruptionChecksum.h"
 #include "day03_SpiralMemory.h"
 #include "day04_HighEntropyPassphrases.h"
+#include "day05_TwistyTrampolines.h"
+#include "day06_MemoryReallocation.h"
+#include "day07_RecursiveCircus.h"
 
 int main()
 {
@@ -16,8 +19,11 @@ int main()
 	std::cout << "day02: " << CorruptionChecksum::compute(CorruptionChecksum::testinput) << "\n";
 	std::cout << "day03: " << SpiralMemory::compute(361527) << "\n";
 	std::cout << "day04: " << HighEntropyPassphrases::compute(HighEntropyPassphrases::testinput) << "\n";
+	std::cout << "day05: " << TwistyTrampolines::compute(TwistyTrampolines::testinput) << "\n";
+	std::cout << "day06: " << MemoryReallocation::compute(MemoryReallocation::testinput) << "\n";
+	std::cout << "day07: " << RecurisveCircus::compute(RecurisveCircus::testinput2) << "\n";
 
-	system("pause");
+	//system("pause");
 
     return 0;
 }

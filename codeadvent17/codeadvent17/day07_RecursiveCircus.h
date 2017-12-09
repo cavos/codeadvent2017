@@ -4,6 +4,7 @@
 #include <sstream>
 #include <fstream>
 #include <regex>
+#include <list>
 
 class RecurisveCircus
 {
@@ -19,8 +20,8 @@ public:
 private:
 
 	struct TowerNode;
-	static bool isHoldedBy(const std::vector<TowerNode>& candidates, const std::string name);
+	static bool isOnBlackList(const std::vector<std::string>& blacklist, const std::string& name);
 	static TowerNode makeNode(std::smatch& match, std::regex& regex);
-	static void pruneHoldees(const TowerNode& node, std::vector<TowerNode>& candidates);
+	static void pruneHoldees(const TowerNode& node, std::list<TowerNode>& candidates);
 };
 

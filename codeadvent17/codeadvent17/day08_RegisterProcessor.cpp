@@ -6,6 +6,8 @@
 #include <regex>
 #include <algorithm>
 #include <iostream>
+#include <limits>
+
 
 const int TARGET_REGISTER = 1;
 const int INSTRUCTION = 2;
@@ -18,6 +20,8 @@ int RegisterProcessor::compute(std::istream& input) {
     std::map<std::string, int> registerMap;
     std::regex regex("(\\w+) (inc|dec) ([\\-0-9]+) if (\\w+) ([><=!]+) ([\\-0-9]+)");
 
+	int largestElementEver = INT_MIN;
+
     std::string instructionLine;
     while (std::getline(input, instructionLine)) {
         std::smatch match;
@@ -27,9 +31,14 @@ int RegisterProcessor::compute(std::istream& input) {
                     registerMap[match[TARGET_REGISTER]] += std::stoi(match[VALUE]);
                 else
                     registerMap[match[TARGET_REGISTER]] -= std::stoi(match[VALUE]);
+
+				if (largestElementEver < registerMap[match[TARGET_REGISTER]])
+					largestElementEver = registerMap[match[TARGET_REGISTER]];
             }
         }
     }
+
+	std::cout << "day08.2: " << largestElementEver << "\n";
 
     return std::max_element(registerMap.begin(), registerMap.end(), 
                 [](auto &l, auto &r) { 

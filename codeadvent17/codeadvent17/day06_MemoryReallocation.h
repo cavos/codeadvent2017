@@ -3,6 +3,7 @@
 #include <istream>
 #include <vector>
 #include <sstream>
+#include <utility>
 
 class MemoryReallocation
 {
@@ -10,7 +11,7 @@ public:
 	MemoryReallocation();
 	~MemoryReallocation();
 
-	static unsigned compute(std::istream& input);
+	static std::pair<unsigned, unsigned> compute(std::istream& input);
 
 	static std::stringstream testinput;
 

@@ -24,7 +24,7 @@ void MemoryReallocation::debugPrint(const std::vector<unsigned>& v) {
 	std::cout << "\n";
 }
 
-unsigned MemoryReallocation::compute(std::istream & input)
+std::pair<unsigned, unsigned> MemoryReallocation::compute(std::istream & input)
 {
 	std::vector<unsigned> memoryBanks = readInput(input);
 	std::vector<unsigned> stateHashes;
@@ -36,7 +36,10 @@ unsigned MemoryReallocation::compute(std::istream & input)
 		reallocate(memoryBanks);
 		duplicateRedistributionIt = std::find(stateHashes.begin(), stateHashes.end(), computeHash(memoryBanks));
 	}
-	return stateHashes.size();
+
+	auto originalPos = duplicateRedistributionIt - stateHashes.begin();
+
+	return std::make_pair(stateHashes.size(), stateHashes.size() - originalPos);
 }
 
 std::vector<unsigned> MemoryReallocation::readInput(std::istream & input)

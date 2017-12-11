@@ -10,6 +10,7 @@ public:
 	~HighEntropyPassphrases();
 
 	static unsigned compute(std::istream& input);
+	static unsigned compute_pt2(std::istream& input);
 
 	static std::ifstream testinput;
 

@@ -19,9 +19,8 @@ unsigned HighEntropyPassphrases::compute(std::istream & input)
 	unsigned validPassphraseCount = 0;
 
 	std::string line;
-	std::getline(input, line);
 	std::vector<std::pair<unsigned, std::string>> passphraseContents;
-	while (!line.empty())
+	while (std::getline(input, line))
 	{
 		bool duplicateWordFound = false;
 		std::stringstream inputLine(line);
@@ -42,11 +41,10 @@ unsigned HighEntropyPassphrases::compute(std::istream & input)
 		if (!duplicateWordFound)
 			validPassphraseCount++;
 		passphraseContents.clear();
-
-		line.clear();
-		std::getline(input, line);
 	}
 
+	input.clear();
+	input.seekg(0, std::ios::beg);
 	return validPassphraseCount;
 }
 
@@ -56,6 +54,40 @@ unsigned HighEntropyPassphrases::computeHashcode(const std::string& value) {
 		hashcode += c * 17;
 
 	return hashcode;
+}
+
+unsigned HighEntropyPassphrases::compute_pt2(std::istream & input)
+{
+	unsigned validPassphraseCount = 0;
+
+	std::string line;
+	std::vector< std::string> passphraseContents;
+	while (std::getline(input, line))
+	{
+		bool duplicateWordFound = false;
+		std::stringstream inputLine(line);
+		do
+		{
+			std::string passphraseValue;
+			std::getline(inputLine, passphraseValue, ' ');
+			std::sort(passphraseValue.begin(), passphraseValue.end());
+
+			auto iter = std::find_if(passphraseContents.begin(), passphraseContents.end(), [&](auto item) {
+				return item == passphraseValue;
+			});
+
+			duplicateWordFound = (iter != passphraseContents.end());
+			passphraseContents.emplace_back(passphraseValue);
+		} while (!inputLine.eof() && !duplicateWordFound);
+
+		if (!duplicateWordFound)
+			validPassphraseCount++;
+		passphraseContents.clear();
+	}
+
+	input.clear();
+	input.seekg(0, std::ios::beg);
+	return validPassphraseCount;
 }
 
 

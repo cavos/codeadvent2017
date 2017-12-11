@@ -1,6 +1,8 @@
 #pragma once
 
 #include <istream>
+#include <map>
+#include <utility>
 
 class SpiralMemory
 {
@@ -9,18 +11,9 @@ public:
 	~SpiralMemory();
 
 	static unsigned compute(unsigned dataLocation);
+	static unsigned compute_pt2(unsigned dataLocation);
 
 private:
-	struct State {
-		int data;
-		int step;
-
-		State(int data, int step) {
-			this->data = data;
-			this->step = step;
-		}
-	};
-
 	struct Direction{
 		int pos;
 		int step;
@@ -33,8 +26,25 @@ private:
 		}
 	};
 
+	struct State {
+		int data;
+		int step;
+		std::map<std::pair<int, int>, unsigned> memory;
+		int currentX = 0;
+		int currentY = 0;
+
+		State(int data, int step) {
+			this->data = data;
+			this->step = step;
+
+			memory[std::make_pair(0, 0)] = 1;
+		}
+	};
+
 	static void update(const unsigned dataLocation,
 					   State *pState,
 					   Direction *pDirection);
+
+	static unsigned computeValue(std::map<std::pair<int, int>, unsigned> &memory, std::pair<int, int>& position);
 };
 

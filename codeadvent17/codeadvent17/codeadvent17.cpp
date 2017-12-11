@@ -21,6 +21,7 @@ int main()
 	std::cout << "day02: " << CorruptionChecksum::compute(CorruptionChecksum::testinput) << "\n";
 	std::cout << "day02.2: " << CorruptionChecksum::compute_pt2(CorruptionChecksum::testinput) << "\n";
 	std::cout << "day03: " << SpiralMemory::compute(361527) << "\n";
+	std::cout << "day03.2: " << SpiralMemory::compute_pt2(361527) << "\n";
 	std::cout << "day04: " << HighEntropyPassphrases::compute(HighEntropyPassphrases::testinput) << "\n";
 	std::cout << "day05: " << TwistyTrampolines::compute(TwistyTrampolines::testinput) << "\n";
 	std::cout << "day06: " << MemoryReallocation::compute(MemoryReallocation::testinput) << "\n";

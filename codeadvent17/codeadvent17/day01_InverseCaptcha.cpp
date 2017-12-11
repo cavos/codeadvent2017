@@ -32,6 +32,9 @@ unsigned InverseCaptcha::compute(std::istream& inputStream)
 	if (first == current)
 		sum += first;
 
+	inputStream.clear();
+	inputStream.seekg(0, std::ios::beg);
+
 	return sum;
 }
 

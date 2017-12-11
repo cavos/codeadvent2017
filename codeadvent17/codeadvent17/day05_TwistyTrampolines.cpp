@@ -27,7 +27,7 @@ unsigned TwistyTrampolines::compute(std::istream & input)
 		std::getline(input, line);
 	}
 
-	int index = 0;
+	unsigned index = 0;
 	unsigned jumpCount = 0;
 	while (0 <= index && index < trampoline.size())
 	{

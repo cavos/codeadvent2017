@@ -4,6 +4,7 @@
 #include <string>
 #include <sstream>
 #include <climits>
+#include <vector>
 
 std::stringstream CorruptionChecksum::testinput(R"input(179	2358	5197	867	163	4418	3135	5049	187	166	4682	5080	5541	172	4294	1397
 2637	136	3222	591	2593	1982	4506	195	4396	3741	2373	157	4533	3864	4159	142
@@ -37,15 +38,15 @@ unsigned CorruptionChecksum::compute(std::istream& input)
 	unsigned checksum = 0;
 
 	std::string line;
-	std::getline(input, line);
-	while (!line.empty())
+	while (std::getline(input, line))
 	{
 		std::stringstream inputLine(line);
-		std::string value;
+		
 		int max = 0;
 		int min = INT_MAX;
 		do
 		{
+			std::string value;
 			std::getline(inputLine, value, '\t');
 			auto number = std::stoi(value);
 			if (number > max)
@@ -55,9 +56,41 @@ unsigned CorruptionChecksum::compute(std::istream& input)
 		} while (!inputLine.eof());
 
 		checksum += max - min;
-		line.clear();
-		std::getline(input, line);
 	}
 
+	input.clear();
+	input.seekg(0, std::ios::beg);
+
+	return checksum;
+}
+
+unsigned CorruptionChecksum::compute_pt2(std::istream& input) {
+	std::string line;
+	unsigned checksum = 0;
+	while (std::getline(input, line))
+	{
+		std::string value;
+		std::stringstream inputLine(line);
+		std::vector<unsigned> rowData;
+		while (std::getline(inputLine, value, '\t'))
+			rowData.emplace_back(std::stoi(value));
+
+		unsigned result = 0;
+		for (auto it1 = rowData.begin(); it1 != rowData.end(); ++it1) {
+			for (auto it2 = it1+1; it2 != rowData.end(); ++it2) {
+				if (*it1 % *it2 == 0) {
+					result = *it1 / *it2;
+					break;
+				}
+				else if (*it2 % *it1 == 0) {
+					result = *it2 / *it1;
+					break;
+				}					
+			}
+			if (result != 0)
+				break;
+		}
+		checksum += result;
+	}
 	return checksum;
 }

@@ -15,7 +15,7 @@ void SpiralMemory::update(const unsigned dataLocation,
 						  SpiralMemory::State *pState,
 						  SpiralMemory::Direction *pDirection)
 {
-	int stepsToMove;
+	unsigned stepsToMove;
 	if (dataLocation >= pState->data + pDirection->step)
 		stepsToMove = pDirection->step;
 	else

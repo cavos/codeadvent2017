@@ -17,14 +17,16 @@ int main()
 {
 	InverseCaptcha inv;
 	std::cout << "day01: " << InverseCaptcha::compute(InverseCaptcha::testinput) << "\n";
+	std::cout << "day01.2: " << InverseCaptcha::compute_pt2(InverseCaptcha::testinput) << "\n";
 	std::cout << "day02: " << CorruptionChecksum::compute(CorruptionChecksum::testinput) << "\n";
+	std::cout << "day02.2: " << CorruptionChecksum::compute_pt2(CorruptionChecksum::testinput) << "\n";
 	std::cout << "day03: " << SpiralMemory::compute(361527) << "\n";
 	std::cout << "day04: " << HighEntropyPassphrases::compute(HighEntropyPassphrases::testinput) << "\n";
 	std::cout << "day05: " << TwistyTrampolines::compute(TwistyTrampolines::testinput) << "\n";
 	std::cout << "day06: " << MemoryReallocation::compute(MemoryReallocation::testinput) << "\n";
 	std::cout << "day07: " << RecurisveCircus::compute(RecurisveCircus::testinput2) << "\n";
 	std::cout << "day08: " << RegisterProcessor::compute(RegisterProcessor::inputtest) << "\n";
-	//system("pause");
+	system("pause");
 
     return 0;
 }

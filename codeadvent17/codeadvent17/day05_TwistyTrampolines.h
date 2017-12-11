@@ -8,7 +8,7 @@ public:
 	TwistyTrampolines();
 	~TwistyTrampolines();
 
-	static unsigned compute(std::istream& input);
+	static unsigned compute(std::istream& input, bool part2);
 
 	static std::ifstream testinput;
 };

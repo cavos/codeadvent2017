@@ -23,7 +23,9 @@ int main()
 	std::cout << "day03: " << SpiralMemory::compute(361527) << "\n";
 	std::cout << "day03.2: " << SpiralMemory::compute_pt2(361527) << "\n";
 	std::cout << "day04: " << HighEntropyPassphrases::compute(HighEntropyPassphrases::testinput) << "\n";
-	std::cout << "day05: " << TwistyTrampolines::compute(TwistyTrampolines::testinput) << "\n";
+	std::cout << "day04.2: " << HighEntropyPassphrases::compute_pt2(HighEntropyPassphrases::testinput) << "\n";
+	std::cout << "day05: " << TwistyTrampolines::compute(TwistyTrampolines::testinput, false) << "\n";
+//	std::cout << "day05.2: " << TwistyTrampolines::compute(TwistyTrampolines::testinput/*std::stringstream("0\n3\n0\n1\n-3")*/, true) << "\n";
 	std::cout << "day06: " << MemoryReallocation::compute(MemoryReallocation::testinput) << "\n";
 	std::cout << "day07: " << RecurisveCircus::compute(RecurisveCircus::testinput2) << "\n";
 	std::cout << "day08: " << RegisterProcessor::compute(RegisterProcessor::inputtest) << "\n";

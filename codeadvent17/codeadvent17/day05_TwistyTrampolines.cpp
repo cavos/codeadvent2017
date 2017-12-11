@@ -15,7 +15,7 @@ TwistyTrampolines::~TwistyTrampolines()
 {
 }
 
-unsigned TwistyTrampolines::compute(std::istream & input)
+unsigned TwistyTrampolines::compute(std::istream & input, bool part2)
 {
 	std::vector<int> trampoline;
 	std::string line;
@@ -31,9 +31,16 @@ unsigned TwistyTrampolines::compute(std::istream & input)
 	unsigned jumpCount = 0;
 	while (0 <= index && index < trampoline.size())
 	{
-		index += trampoline[index]++;
+		auto jumpIndex = index;
+		index += trampoline[index];
+		if (trampoline[jumpIndex] >= 3 && part2)
+			trampoline[jumpIndex]--;
+		else
+			trampoline[jumpIndex]++;
 		++jumpCount;
 	}
 
+	input.clear();
+	input.seekg(0, std::ios::beg);
 	return jumpCount;
 }

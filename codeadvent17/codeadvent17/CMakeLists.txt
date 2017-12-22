@@ -10,4 +10,5 @@ day05_TwistyTrampolines.cpp
 day06_MemoryReallocation.cpp
 day07_RecursiveCircus.cpp
 day08_RegisterProcessor.cpp
+day09_StreamProcessing.cpp
 stdafx.cpp)

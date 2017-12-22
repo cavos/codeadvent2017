@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+.vscode/settings.json
+codeadvent17/codeadvent17/output.txt
+codeadvent17/codeadvent17/codeadvent17.vcxproj
+codeadvent17/codeadvent17.VC.db
+codeadvent17/codeadvent17/.ninja_deps
+codeadvent17/codeadvent17/.ninja_log
+codeadvent17/codeadvent17/cmake_install.cmake
+codeadvent17/codeadvent17/CMakeCache.txt
+codeadvent17/codeadvent17/rules.ninja
+codeadvent17/codeadvent17/CMakeFiles/*

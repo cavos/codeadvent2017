@@ -1,0 +1,13 @@
+cmake_minimum_required (VERSION 3.9)
+project (codeadvent2017)
+
+add_executable(codeadvent17 codeadvent17.cpp
+day01_InverseCaptcha.cpp
+day02_CorruptionChecksum.cpp
+day03_SpiralMemory.cpp
+day04_HighEntropyPassphrases.cpp
+day05_TwistyTrampolines.cpp
+day06_MemoryReallocation.cpp
+day07_RecursiveCircus.cpp
+day08_RegisterProcessor.cpp
+stdafx.cpp)

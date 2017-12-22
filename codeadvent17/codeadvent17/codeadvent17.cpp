@@ -30,6 +30,7 @@ int main()
 	std::cout << "day06: " << day6.first << "\n";
 	std::cout << "day06.2: " << day6.second << "\n";
 	std::cout << "day07: " << RecurisveCircus::compute(RecurisveCircus::testinput2) << "\n";
+	std::cout << "day07.2: " << RecurisveCircus::compute_pt2(RecurisveCircus::testinput2) << "\n";
 	std::cout << "day08: " << RegisterProcessor::compute(RegisterProcessor::inputtest) << "\n";
 	system("pause");
 

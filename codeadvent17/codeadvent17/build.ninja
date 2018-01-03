@@ -39,66 +39,84 @@ include rules.ninja
 build cmake_object_order_depends_target_codeadvent17: phony
 build CMakeFiles\codeadvent17.dir\codeadvent17.cpp.obj: CXX_COMPILER__codeadvent17 codeadvent17.cpp || cmake_object_order_depends_target_codeadvent17
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -ID:\_prj\cpp\boost_1_65_1
   OBJECT_DIR = CMakeFiles\codeadvent17.dir
   OBJECT_FILE_DIR = CMakeFiles\codeadvent17.dir
   TARGET_COMPILE_PDB = CMakeFiles\codeadvent17.dir\
   TARGET_PDB = codeadvent17.pdb
 build CMakeFiles\codeadvent17.dir\day01_InverseCaptcha.cpp.obj: CXX_COMPILER__codeadvent17 day01_InverseCaptcha.cpp || cmake_object_order_depends_target_codeadvent17
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -ID:\_prj\cpp\boost_1_65_1
   OBJECT_DIR = CMakeFiles\codeadvent17.dir
   OBJECT_FILE_DIR = CMakeFiles\codeadvent17.dir
   TARGET_COMPILE_PDB = CMakeFiles\codeadvent17.dir\
   TARGET_PDB = codeadvent17.pdb
 build CMakeFiles\codeadvent17.dir\day02_CorruptionChecksum.cpp.obj: CXX_COMPILER__codeadvent17 day02_CorruptionChecksum.cpp || cmake_object_order_depends_target_codeadvent17
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -ID:\_prj\cpp\boost_1_65_1
   OBJECT_DIR = CMakeFiles\codeadvent17.dir
   OBJECT_FILE_DIR = CMakeFiles\codeadvent17.dir
   TARGET_COMPILE_PDB = CMakeFiles\codeadvent17.dir\
   TARGET_PDB = codeadvent17.pdb
 build CMakeFiles\codeadvent17.dir\day03_SpiralMemory.cpp.obj: CXX_COMPILER__codeadvent17 day03_SpiralMemory.cpp || cmake_object_order_depends_target_codeadvent17
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -ID:\_prj\cpp\boost_1_65_1
   OBJECT_DIR = CMakeFiles\codeadvent17.dir
   OBJECT_FILE_DIR = CMakeFiles\codeadvent17.dir
   TARGET_COMPILE_PDB = CMakeFiles\codeadvent17.dir\
   TARGET_PDB = codeadvent17.pdb
 build CMakeFiles\codeadvent17.dir\day04_HighEntropyPassphrases.cpp.obj: CXX_COMPILER__codeadvent17 day04_HighEntropyPassphrases.cpp || cmake_object_order_depends_target_codeadvent17
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -ID:\_prj\cpp\boost_1_65_1
   OBJECT_DIR = CMakeFiles\codeadvent17.dir
   OBJECT_FILE_DIR = CMakeFiles\codeadvent17.dir
   TARGET_COMPILE_PDB = CMakeFiles\codeadvent17.dir\
   TARGET_PDB = codeadvent17.pdb
 build CMakeFiles\codeadvent17.dir\day05_TwistyTrampolines.cpp.obj: CXX_COMPILER__codeadvent17 day05_TwistyTrampolines.cpp || cmake_object_order_depends_target_codeadvent17
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -ID:\_prj\cpp\boost_1_65_1
   OBJECT_DIR = CMakeFiles\codeadvent17.dir
   OBJECT_FILE_DIR = CMakeFiles\codeadvent17.dir
   TARGET_COMPILE_PDB = CMakeFiles\codeadvent17.dir\
   TARGET_PDB = codeadvent17.pdb
 build CMakeFiles\codeadvent17.dir\day06_MemoryReallocation.cpp.obj: CXX_COMPILER__codeadvent17 day06_MemoryReallocation.cpp || cmake_object_order_depends_target_codeadvent17
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -ID:\_prj\cpp\boost_1_65_1
   OBJECT_DIR = CMakeFiles\codeadvent17.dir
   OBJECT_FILE_DIR = CMakeFiles\codeadvent17.dir
   TARGET_COMPILE_PDB = CMakeFiles\codeadvent17.dir\
   TARGET_PDB = codeadvent17.pdb
 build CMakeFiles\codeadvent17.dir\day07_RecursiveCircus.cpp.obj: CXX_COMPILER__codeadvent17 day07_RecursiveCircus.cpp || cmake_object_order_depends_target_codeadvent17
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -ID:\_prj\cpp\boost_1_65_1
   OBJECT_DIR = CMakeFiles\codeadvent17.dir
   OBJECT_FILE_DIR = CMakeFiles\codeadvent17.dir
   TARGET_COMPILE_PDB = CMakeFiles\codeadvent17.dir\
   TARGET_PDB = codeadvent17.pdb
 build CMakeFiles\codeadvent17.dir\day08_RegisterProcessor.cpp.obj: CXX_COMPILER__codeadvent17 day08_RegisterProcessor.cpp || cmake_object_order_depends_target_codeadvent17
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -ID:\_prj\cpp\boost_1_65_1
   OBJECT_DIR = CMakeFiles\codeadvent17.dir
   OBJECT_FILE_DIR = CMakeFiles\codeadvent17.dir
   TARGET_COMPILE_PDB = CMakeFiles\codeadvent17.dir\
   TARGET_PDB = codeadvent17.pdb
 build CMakeFiles\codeadvent17.dir\day09_StreamProcessing.cpp.obj: CXX_COMPILER__codeadvent17 day09_StreamProcessing.cpp || cmake_object_order_depends_target_codeadvent17
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -ID:\_prj\cpp\boost_1_65_1
+  OBJECT_DIR = CMakeFiles\codeadvent17.dir
+  OBJECT_FILE_DIR = CMakeFiles\codeadvent17.dir
+  TARGET_COMPILE_PDB = CMakeFiles\codeadvent17.dir\
+  TARGET_PDB = codeadvent17.pdb
+build CMakeFiles\codeadvent17.dir\day10_KnotHash.cpp.obj: CXX_COMPILER__codeadvent17 day10_KnotHash.cpp || cmake_object_order_depends_target_codeadvent17
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -ID:\_prj\cpp\boost_1_65_1
   OBJECT_DIR = CMakeFiles\codeadvent17.dir
   OBJECT_FILE_DIR = CMakeFiles\codeadvent17.dir
   TARGET_COMPILE_PDB = CMakeFiles\codeadvent17.dir\
   TARGET_PDB = codeadvent17.pdb
 build CMakeFiles\codeadvent17.dir\stdafx.cpp.obj: CXX_COMPILER__codeadvent17 stdafx.cpp || cmake_object_order_depends_target_codeadvent17
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -ID:\_prj\cpp\boost_1_65_1
   OBJECT_DIR = CMakeFiles\codeadvent17.dir
   OBJECT_FILE_DIR = CMakeFiles\codeadvent17.dir
   TARGET_COMPILE_PDB = CMakeFiles\codeadvent17.dir\
@@ -111,10 +129,11 @@ build CMakeFiles\codeadvent17.dir\stdafx.cpp.obj: CXX_COMPILER__codeadvent17 std
 #############################################
 # Link the executable codeadvent17.exe
 
-build codeadvent17.exe: CXX_EXECUTABLE_LINKER__codeadvent17 CMakeFiles\codeadvent17.dir\codeadvent17.cpp.obj CMakeFiles\codeadvent17.dir\day01_InverseCaptcha.cpp.obj CMakeFiles\codeadvent17.dir\day02_CorruptionChecksum.cpp.obj CMakeFiles\codeadvent17.dir\day03_SpiralMemory.cpp.obj CMakeFiles\codeadvent17.dir\day04_HighEntropyPassphrases.cpp.obj CMakeFiles\codeadvent17.dir\day05_TwistyTrampolines.cpp.obj CMakeFiles\codeadvent17.dir\day06_MemoryReallocation.cpp.obj CMakeFiles\codeadvent17.dir\day07_RecursiveCircus.cpp.obj CMakeFiles\codeadvent17.dir\day08_RegisterProcessor.cpp.obj CMakeFiles\codeadvent17.dir\day09_StreamProcessing.cpp.obj CMakeFiles\codeadvent17.dir\stdafx.cpp.obj
+build codeadvent17.exe: CXX_EXECUTABLE_LINKER__codeadvent17 CMakeFiles\codeadvent17.dir\codeadvent17.cpp.obj CMakeFiles\codeadvent17.dir\day01_InverseCaptcha.cpp.obj CMakeFiles\codeadvent17.dir\day02_CorruptionChecksum.cpp.obj CMakeFiles\codeadvent17.dir\day03_SpiralMemory.cpp.obj CMakeFiles\codeadvent17.dir\day04_HighEntropyPassphrases.cpp.obj CMakeFiles\codeadvent17.dir\day05_TwistyTrampolines.cpp.obj CMakeFiles\codeadvent17.dir\day06_MemoryReallocation.cpp.obj CMakeFiles\codeadvent17.dir\day07_RecursiveCircus.cpp.obj CMakeFiles\codeadvent17.dir\day08_RegisterProcessor.cpp.obj CMakeFiles\codeadvent17.dir\day09_StreamProcessing.cpp.obj CMakeFiles\codeadvent17.dir\day10_KnotHash.cpp.obj CMakeFiles\codeadvent17.dir\stdafx.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_PATH = -LIBPATH:D:\_prj\cpp\boost_1_65_1\stage\lib
   OBJECT_DIR = CMakeFiles\codeadvent17.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -167,13 +186,13 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.9.4\CMakeCCompiler.cmake CMakeFiles\3.9.4\CMakeCXXCompiler.cmake CMakeFiles\3.9.4\CMakeRCCompiler.cmake CMakeFiles\3.9.4\CMakeSystem.cmake CMakeLists.txt
+build build.ninja: RERUN_CMAKE | C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\FindBoost.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.9.4\CMakeCCompiler.cmake CMakeFiles\3.9.4\CMakeCXXCompiler.cmake CMakeFiles\3.9.4\CMakeRCCompiler.cmake CMakeFiles\3.9.4\CMakeSystem.cmake CMakeLists.txt
   pool = console
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.9.4\CMakeCCompiler.cmake CMakeFiles\3.9.4\CMakeCXXCompiler.cmake CMakeFiles\3.9.4\CMakeRCCompiler.cmake CMakeFiles\3.9.4\CMakeSystem.cmake CMakeLists.txt: phony
+build C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\FindBoost.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake C$:\Program$ Files\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.9.4\CMakeCCompiler.cmake CMakeFiles\3.9.4\CMakeCXXCompiler.cmake CMakeFiles\3.9.4\CMakeRCCompiler.cmake CMakeFiles\3.9.4\CMakeSystem.cmake CMakeLists.txt: phony
 
 #############################################
 # Clean all the built files.

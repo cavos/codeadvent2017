@@ -13,6 +13,7 @@
 #include "day07_RecursiveCircus.h"
 #include "day08_RegisterProcessor.h"
 #include "day09_StreamProcessing.h"
+#include "day10_KnotHash.h"
 
 int main()
 {
@@ -34,7 +35,7 @@ int main()
 	std::cout << "day07.2: " << RecurisveCircus::compute_pt2(RecurisveCircus::testinput2) << "\n";
 	std::cout << "day08: " << RegisterProcessor::compute(RegisterProcessor::inputtest) << "\n";
 	std::cout << "day09: " << StreamProcessing::compute(StreamProcessing::puzzleInput) << "\n";
-	//std::cout << "day09: " << StreamProcessing::compute(std::stringstream("<{o\"i!a,<{i<a>")) << "\n";
+	std::cout << "day10: " << KnotHash::compute(256, KnotHash::puzzleInput) << "\n";
 	
 	system("pause");
 

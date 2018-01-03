@@ -32,19 +32,7 @@ unsigned KnotHash::compute(const unsigned bufferSize,
   std::string input;  
   while (std::getline(inputStream, input, ',')) {
     int reverseLength = std::stoi(input);
-    unsigned reverseSteps = reverseLength / 2;
-
-    auto begin = buffer.begin() + currentPosition;
-    auto end = buffer.begin() +
-               (currentPosition + reverseLength /* + skip */) % buffer.size() -
-               1;
-    while (reverseSteps) {
-      std::iter_swap(begin, end);
-
-      begin = (begin + 1 != buffer.end()) ? ++begin : buffer.begin();
-      end = (end != buffer.begin()) ? --end : buffer.end() - 1;
-      --reverseSteps;
-    }
+    pinchAndTwist(buffer, reverseLength, currentPosition);
 
     currentPosition = (currentPosition + reverseLength + skip) % buffer.size();
     skip++;
@@ -56,7 +44,28 @@ unsigned KnotHash::compute(const unsigned bufferSize,
 std::string KnotHash::compute_pt2(std::stringstream &input) {
   std::vector<unsigned char> reverseLengths = getReverseLengths(input);
 
-  return "asdf";
+  std::vector<unsigned char> buffer(bufferSize);
+  std::iota(buffer.begin(), buffer.end(), 0);
+  
+  unsgined rounds = 64;
+  unsigned skip = 0;
+  unsigned currentPosition = 0;
+  while (rounds) {
+    for (auto reverseLength : reverseLengths) {
+      pinchAndTwist(buffer, reverseLength, currentPosition);
+      currentPosition = (currentPosition + reverseLength + skip) % buffer.size();
+      ++skip;
+    }
+    --rounds;
+  }
+  
+  std::stringstream result;
+  for (unsigned i = 0; i < 16; ++i) {
+    result << std::hex << std::accumulate(buffer.begin() + i*16, buffer.end() +(i+1)*16,
+                                          0, [](auto a, auto b) { return a ^ b; });
+  }
+  
+  return result.str();
 }
 
 std::vector<unsigned char> KnotHash::getReverseLengths(std::stringstream &input) {
@@ -67,4 +76,20 @@ std::vector<unsigned char> KnotHash::getReverseLengths(std::stringstream &input)
 
   reverseLengths.insert(reverseLengths.end(), {17, 31, 73, 47, 23});
 return reverseLengths;
+}
+
+void pinchAndTwist(std::vector<unsigned char> &buffer, unsigned reverseLength, unsigned offset) {
+    unsigned reverseSteps = reverseLength / 2;
+
+    auto begin = buffer.begin() + offset;
+    auto end = buffer.begin() +
+               (offset + reverseLength /* + skip */) % buffer.size() -
+               1;
+    while (reverseSteps) {
+      std::iter_swap(begin, end);
+
+      begin = (begin + 1 != buffer.end()) ? ++begin : buffer.begin();
+      end = (end != buffer.begin()) ? --end : buffer.end() - 1;
+      --reverseSteps;
+    }
 }

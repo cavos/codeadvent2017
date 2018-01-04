@@ -1,28 +1,16 @@
 #include "day10_KnotHash.h"
 
 #include <algorithm>
+#include <functional>
 #include <iostream>
 #include <numeric>
 #include <string>
 #include <utility>
 #include <vector>
-#include <functional>
+#include <iomanip>
 
 std::stringstream
     KnotHash::puzzleInput("206,63,255,131,65,80,238,157,254,24,133,2,16,0,1,3");
-
-void _day10_debugPrint(const std::vector<unsigned char> &buffer,
-                       unsigned currentPos) {
-  for (unsigned i = 0; i < buffer.size(); ++i) {
-    if (i == currentPos)
-      std::cout << "(";
-    std::cout << buffer[i];
-    if (i == currentPos)
-      std::cout << ")";
-    std::cout << " ";
-  }
-  std::cout << "\n";
-}
 
 unsigned KnotHash::compute(const unsigned bufferSize,
                            std::istream &inputStream) {
@@ -59,14 +47,12 @@ std::string KnotHash::compute_pt2(std::stringstream &input) {
           (currentPosition + reverseLength + skip) % buffer.size();
       ++skip;
     }
-    std::cout << "round " << rounds << " pos " << currentPosition << " skip " << skip << "\n";
     --rounds;
   }
 
   std::stringstream result;
   for (unsigned i = 0; i < 16; ++i) {
-    std::cout << "accu (" << i*16 << " : " << (i + 1) * 16 << ")\n";
-    result << std::hex
+    result << std::hex << std::setfill('0') << std::setw(2)
            << std::accumulate(buffer.begin() + i * 16,
                               buffer.begin() + (i + 1) * 16, 0,
                               std::bit_xor<unsigned char>());
@@ -78,19 +64,18 @@ std::string KnotHash::compute_pt2(std::stringstream &input) {
 std::vector<unsigned char>
 KnotHash::getReverseLengths(std::stringstream &input) {
   std::vector<unsigned char> reverseLengths;
-  while (!input.eof()) {
-    reverseLengths.push_back(static_cast<unsigned char>(input.get()));
+  int c;
+  while ((c = input.get()) != -1) {
+    reverseLengths.push_back(static_cast<unsigned char>(c));
   }
 
   reverseLengths.insert(reverseLengths.end(), {17, 31, 73, 47, 23});
   return reverseLengths;
 }
 
-void KnotHash::pinchAndTwist(std::vector<unsigned char> &buffer, unsigned reverseLength,
-                   unsigned offset) {
+void KnotHash::pinchAndTwist(std::vector<unsigned char> &buffer,
+                             unsigned reverseLength, unsigned offset) {
   unsigned reverseSteps = reverseLength / 2;
-
-  //std::cout << "offset: " << offset << " reverse length:" << reverseLength << "\n";
 
   auto begin = buffer.begin() + offset;
   auto end = buffer.begin() + (offset + reverseLength - 1) % buffer.size();

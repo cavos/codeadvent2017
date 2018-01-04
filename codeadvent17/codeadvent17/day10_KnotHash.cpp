@@ -6,6 +6,7 @@
 #include <string>
 #include <utility>
 #include <vector>
+#include <functional>
 
 std::stringstream
     KnotHash::puzzleInput("206,63,255,131,65,80,238,157,254,24,133,2,16,0,1,3");
@@ -68,7 +69,7 @@ std::string KnotHash::compute_pt2(std::stringstream &input) {
     result << std::hex
            << std::accumulate(buffer.begin() + i * 16,
                               buffer.begin() + (i + 1) * 16, 0,
-                              [](auto a, auto b) { return a ^ b; });
+                              std::bit_xor<unsigned char>());
   }
 
   return result.str();

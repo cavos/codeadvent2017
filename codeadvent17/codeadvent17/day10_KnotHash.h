@@ -12,4 +12,6 @@ public:
 
 private:
     static std::vector<unsigned char> getReverseLengths(std::stringstream &input);
+    static void pinchAndTwist(std::vector<unsigned char> &buffer, unsigned reverseLength,
+                   unsigned offset);
 };

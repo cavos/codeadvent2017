@@ -7,9 +7,10 @@
 #include <utility>
 #include <vector>
 
-std::stringstream KnotHash::puzzleInput("206,63,255,131,65,80,238,157,254,24,133,2,16,0,1,3");
+std::stringstream
+    KnotHash::puzzleInput("206,63,255,131,65,80,238,157,254,24,133,2,16,0,1,3");
 
-void _day10_debugPrint(const std::vector<unsigned> &buffer,
+void _day10_debugPrint(const std::vector<unsigned char> &buffer,
                        unsigned currentPos) {
   for (unsigned i = 0; i < buffer.size(); ++i) {
     if (i == currentPos)
@@ -29,7 +30,7 @@ unsigned KnotHash::compute(const unsigned bufferSize,
 
   unsigned skip = 0;
   unsigned currentPosition = 0;
-  std::string input;  
+  std::string input;
   while (std::getline(inputStream, input, ',')) {
     int reverseLength = std::stoi(input);
     pinchAndTwist(buffer, reverseLength, currentPosition);
@@ -44,52 +45,59 @@ unsigned KnotHash::compute(const unsigned bufferSize,
 std::string KnotHash::compute_pt2(std::stringstream &input) {
   std::vector<unsigned char> reverseLengths = getReverseLengths(input);
 
-  std::vector<unsigned char> buffer(bufferSize);
+  std::vector<unsigned char> buffer(256);
   std::iota(buffer.begin(), buffer.end(), 0);
-  
-  unsgined rounds = 64;
+
+  unsigned rounds = 64;
   unsigned skip = 0;
   unsigned currentPosition = 0;
   while (rounds) {
     for (auto reverseLength : reverseLengths) {
       pinchAndTwist(buffer, reverseLength, currentPosition);
-      currentPosition = (currentPosition + reverseLength + skip) % buffer.size();
+      currentPosition =
+          (currentPosition + reverseLength + skip) % buffer.size();
       ++skip;
     }
+    std::cout << "round " << rounds << " pos " << currentPosition << " skip " << skip << "\n";
     --rounds;
   }
-  
+
   std::stringstream result;
   for (unsigned i = 0; i < 16; ++i) {
-    result << std::hex << std::accumulate(buffer.begin() + i*16, buffer.end() +(i+1)*16,
-                                          0, [](auto a, auto b) { return a ^ b; });
+    std::cout << "accu (" << i*16 << " : " << (i + 1) * 16 << ")\n";
+    result << std::hex
+           << std::accumulate(buffer.begin() + i * 16,
+                              buffer.begin() + (i + 1) * 16, 0,
+                              [](auto a, auto b) { return a ^ b; });
   }
-  
+
   return result.str();
 }
 
-std::vector<unsigned char> KnotHash::getReverseLengths(std::stringstream &input) {
+std::vector<unsigned char>
+KnotHash::getReverseLengths(std::stringstream &input) {
   std::vector<unsigned char> reverseLengths;
   while (!input.eof()) {
     reverseLengths.push_back(static_cast<unsigned char>(input.get()));
   }
 
   reverseLengths.insert(reverseLengths.end(), {17, 31, 73, 47, 23});
-return reverseLengths;
+  return reverseLengths;
 }
 
-void pinchAndTwist(std::vector<unsigned char> &buffer, unsigned reverseLength, unsigned offset) {
-    unsigned reverseSteps = reverseLength / 2;
+void KnotHash::pinchAndTwist(std::vector<unsigned char> &buffer, unsigned reverseLength,
+                   unsigned offset) {
+  unsigned reverseSteps = reverseLength / 2;
 
-    auto begin = buffer.begin() + offset;
-    auto end = buffer.begin() +
-               (offset + reverseLength /* + skip */) % buffer.size() -
-               1;
-    while (reverseSteps) {
-      std::iter_swap(begin, end);
+  //std::cout << "offset: " << offset << " reverse length:" << reverseLength << "\n";
 
-      begin = (begin + 1 != buffer.end()) ? ++begin : buffer.begin();
-      end = (end != buffer.begin()) ? --end : buffer.end() - 1;
-      --reverseSteps;
-    }
+  auto begin = buffer.begin() + offset;
+  auto end = buffer.begin() + (offset + reverseLength - 1) % buffer.size();
+  while (reverseSteps) {
+    std::iter_swap(begin, end);
+
+    begin = (begin + 1 != buffer.end()) ? ++begin : buffer.begin();
+    end = (end != buffer.begin()) ? --end : buffer.end() - 1;
+    --reverseSteps;
+  }
 }

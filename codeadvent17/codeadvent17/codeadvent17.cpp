@@ -35,7 +35,8 @@ int main()
 	std::cout << "day07.2: " << RecurisveCircus::compute_pt2(RecurisveCircus::testinput2) << "\n";
 	std::cout << "day08: " << RegisterProcessor::compute(RegisterProcessor::inputtest) << "\n";
 	std::cout << "day09: " << StreamProcessing::compute(StreamProcessing::puzzleInput) << "\n";
-	std::cout << "day10: " << KnotHash::compute(256, KnotHash::puzzleInput) << "\n";
+	//std::cout << "day10: " << KnotHash::compute(256, KnotHash::puzzleInput) << "\n";
+	std::cout << "day10.2: " << KnotHash::compute_pt2(/* KnotHash::puzzleInput */std::stringstream("1,2,3")) << "\n";
 	
 	system("pause");
 

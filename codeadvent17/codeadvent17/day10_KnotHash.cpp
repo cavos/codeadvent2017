@@ -8,6 +8,8 @@
 #include <utility>
 #include <vector>
 #include <iomanip>
+#include <limits>
+#include <iterator>
 
 std::stringstream
     KnotHash::puzzleInput("206,63,255,131,65,80,238,157,254,24,133,2,16,0,1,3");
@@ -53,8 +55,9 @@ std::string KnotHash::compute_pt2(std::stringstream &input) {
   std::stringstream result;
   for (unsigned i = 0; i < 16; ++i) {
     result << std::hex << std::setfill('0') << std::setw(2)
-           << std::accumulate(buffer.begin() + i * 16,
-                              buffer.begin() + (i + 1) * 16, 0,
+           << std::accumulate(std::next(buffer.begin(), i * 16),
+                              std::next(buffer.begin(), (i + 1) * 16),
+                              std::numeric_limits<unsigned>::min(),
                               std::bit_xor<unsigned char>());
   }
 

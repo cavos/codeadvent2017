@@ -448,6 +448,33 @@ day11_HexEd.cpp.s:
 	$(MAKE) -f CMakeFiles\codeadvent17.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\codeadvent17.dir\day11_HexEd.cpp.s
 .PHONY : day11_HexEd.cpp.s
 
+day12_DigitalPlumber.obj: day12_DigitalPlumber.cpp.obj
+
+.PHONY : day12_DigitalPlumber.obj
+
+# target to build an object file
+day12_DigitalPlumber.cpp.obj:
+	$(MAKE) -f CMakeFiles\codeadvent17.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\codeadvent17.dir\day12_DigitalPlumber.cpp.obj
+.PHONY : day12_DigitalPlumber.cpp.obj
+
+day12_DigitalPlumber.i: day12_DigitalPlumber.cpp.i
+
+.PHONY : day12_DigitalPlumber.i
+
+# target to preprocess a source file
+day12_DigitalPlumber.cpp.i:
+	$(MAKE) -f CMakeFiles\codeadvent17.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\codeadvent17.dir\day12_DigitalPlumber.cpp.i
+.PHONY : day12_DigitalPlumber.cpp.i
+
+day12_DigitalPlumber.s: day12_DigitalPlumber.cpp.s
+
+.PHONY : day12_DigitalPlumber.s
+
+# target to generate assembly for a file
+day12_DigitalPlumber.cpp.s:
+	$(MAKE) -f CMakeFiles\codeadvent17.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\codeadvent17.dir\day12_DigitalPlumber.cpp.s
+.PHONY : day12_DigitalPlumber.cpp.s
+
 stdafx.obj: stdafx.cpp.obj
 
 .PHONY : stdafx.obj
@@ -520,6 +547,9 @@ help:
 	@echo ... day11_HexEd.obj
 	@echo ... day11_HexEd.i
 	@echo ... day11_HexEd.s
+	@echo ... day12_DigitalPlumber.obj
+	@echo ... day12_DigitalPlumber.i
+	@echo ... day12_DigitalPlumber.s
 	@echo ... stdafx.obj
 	@echo ... stdafx.i
 	@echo ... stdafx.s

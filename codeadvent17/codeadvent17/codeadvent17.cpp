@@ -15,6 +15,7 @@
 #include "day09_StreamProcessing.h"
 #include "day10_KnotHash.h"
 #include "day11_HexEd.h"
+#include "day12_DigitalPlumber.h"
 
 int main()
 {
@@ -39,8 +40,11 @@ int main()
 	//std::cout << "day10: " << KnotHash::compute(256, KnotHash::puzzleInput) << "\n";
 	std::cout << "day10.2: " << KnotHash::compute_pt2(KnotHash::puzzleInput /* std::stringstream("1,2,3") */) << "\n";
 	auto day11 = HexEd::compute(std::ifstream(HexEd::testInput));
-	std::cout << "day11:" << day11.first << "\n";
-	std::cout << "day11.2:" << day11.second << "\n";
+	std::cout << "day11: " << day11.first << "\n";
+	std::cout << "day11.2: " << day11.second << "\n";
+	auto day12 = DigitalPlumber::compute(std::ifstream(DigitalPlumber::testInput));
+	std::cout << "day12: " << day12.first << "\n";
+	std::cout << "day12.2: " << day12.second << "\n";
 	
 	system("pause");
 

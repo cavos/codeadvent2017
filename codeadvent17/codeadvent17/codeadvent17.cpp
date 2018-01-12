@@ -14,6 +14,7 @@
 #include "day08_RegisterProcessor.h"
 #include "day09_StreamProcessing.h"
 #include "day10_KnotHash.h"
+#include "day11_HexEd.h"
 
 int main()
 {
@@ -37,6 +38,9 @@ int main()
 	std::cout << "day09: " << StreamProcessing::compute(StreamProcessing::puzzleInput) << "\n";
 	//std::cout << "day10: " << KnotHash::compute(256, KnotHash::puzzleInput) << "\n";
 	std::cout << "day10.2: " << KnotHash::compute_pt2(KnotHash::puzzleInput /* std::stringstream("1,2,3") */) << "\n";
+	auto day11 = HexEd::compute(std::ifstream(HexEd::testInput));
+	std::cout << "day11:" << day11.first << "\n";
+	std::cout << "day11.2:" << day11.second << "\n";
 	
 	system("pause");
 

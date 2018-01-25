@@ -26,6 +26,7 @@ day09_StreamProcessing.cpp
 day10_KnotHash.cpp
 day11_HexEd.cpp
 day12_DigitalPlumber.cpp
+day13_PacketScanners.cpp
 stdafx.cpp)
 
 target_link_libraries(codeadvent17 ${Boost_LIBRARIES})

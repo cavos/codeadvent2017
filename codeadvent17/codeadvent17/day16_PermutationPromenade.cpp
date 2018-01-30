@@ -65,7 +65,7 @@ std::string PermutationPromenade::compute_pt2(std::istream & input)
 			dancers = dancersOut;
 		}
 		else
-			dancers = it->second;
+			break;//todo: test it
 	}
 
 	return knownDances[1000000000 % knownDances.size()].first;

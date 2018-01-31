@@ -475,6 +475,141 @@ day12_DigitalPlumber.cpp.s:
 	$(MAKE) -f CMakeFiles\codeadvent17.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\codeadvent17.dir\day12_DigitalPlumber.cpp.s
 .PHONY : day12_DigitalPlumber.cpp.s
 
+day13_PacketScanners.obj: day13_PacketScanners.cpp.obj
+
+.PHONY : day13_PacketScanners.obj
+
+# target to build an object file
+day13_PacketScanners.cpp.obj:
+	$(MAKE) -f CMakeFiles\codeadvent17.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\codeadvent17.dir\day13_PacketScanners.cpp.obj
+.PHONY : day13_PacketScanners.cpp.obj
+
+day13_PacketScanners.i: day13_PacketScanners.cpp.i
+
+.PHONY : day13_PacketScanners.i
+
+# target to preprocess a source file
+day13_PacketScanners.cpp.i:
+	$(MAKE) -f CMakeFiles\codeadvent17.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\codeadvent17.dir\day13_PacketScanners.cpp.i
+.PHONY : day13_PacketScanners.cpp.i
+
+day13_PacketScanners.s: day13_PacketScanners.cpp.s
+
+.PHONY : day13_PacketScanners.s
+
+# target to generate assembly for a file
+day13_PacketScanners.cpp.s:
+	$(MAKE) -f CMakeFiles\codeadvent17.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\codeadvent17.dir\day13_PacketScanners.cpp.s
+.PHONY : day13_PacketScanners.cpp.s
+
+day14_DiskDefragmentation.obj: day14_DiskDefragmentation.cpp.obj
+
+.PHONY : day14_DiskDefragmentation.obj
+
+# target to build an object file
+day14_DiskDefragmentation.cpp.obj:
+	$(MAKE) -f CMakeFiles\codeadvent17.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\codeadvent17.dir\day14_DiskDefragmentation.cpp.obj
+.PHONY : day14_DiskDefragmentation.cpp.obj
+
+day14_DiskDefragmentation.i: day14_DiskDefragmentation.cpp.i
+
+.PHONY : day14_DiskDefragmentation.i
+
+# target to preprocess a source file
+day14_DiskDefragmentation.cpp.i:
+	$(MAKE) -f CMakeFiles\codeadvent17.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\codeadvent17.dir\day14_DiskDefragmentation.cpp.i
+.PHONY : day14_DiskDefragmentation.cpp.i
+
+day14_DiskDefragmentation.s: day14_DiskDefragmentation.cpp.s
+
+.PHONY : day14_DiskDefragmentation.s
+
+# target to generate assembly for a file
+day14_DiskDefragmentation.cpp.s:
+	$(MAKE) -f CMakeFiles\codeadvent17.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\codeadvent17.dir\day14_DiskDefragmentation.cpp.s
+.PHONY : day14_DiskDefragmentation.cpp.s
+
+day15_DuelingGenerators.obj: day15_DuelingGenerators.cpp.obj
+
+.PHONY : day15_DuelingGenerators.obj
+
+# target to build an object file
+day15_DuelingGenerators.cpp.obj:
+	$(MAKE) -f CMakeFiles\codeadvent17.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\codeadvent17.dir\day15_DuelingGenerators.cpp.obj
+.PHONY : day15_DuelingGenerators.cpp.obj
+
+day15_DuelingGenerators.i: day15_DuelingGenerators.cpp.i
+
+.PHONY : day15_DuelingGenerators.i
+
+# target to preprocess a source file
+day15_DuelingGenerators.cpp.i:
+	$(MAKE) -f CMakeFiles\codeadvent17.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\codeadvent17.dir\day15_DuelingGenerators.cpp.i
+.PHONY : day15_DuelingGenerators.cpp.i
+
+day15_DuelingGenerators.s: day15_DuelingGenerators.cpp.s
+
+.PHONY : day15_DuelingGenerators.s
+
+# target to generate assembly for a file
+day15_DuelingGenerators.cpp.s:
+	$(MAKE) -f CMakeFiles\codeadvent17.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\codeadvent17.dir\day15_DuelingGenerators.cpp.s
+.PHONY : day15_DuelingGenerators.cpp.s
+
+day16_PermutationPromenade.obj: day16_PermutationPromenade.cpp.obj
+
+.PHONY : day16_PermutationPromenade.obj
+
+# target to build an object file
+day16_PermutationPromenade.cpp.obj:
+	$(MAKE) -f CMakeFiles\codeadvent17.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\codeadvent17.dir\day16_PermutationPromenade.cpp.obj
+.PHONY : day16_PermutationPromenade.cpp.obj
+
+day16_PermutationPromenade.i: day16_PermutationPromenade.cpp.i
+
+.PHONY : day16_PermutationPromenade.i
+
+# target to preprocess a source file
+day16_PermutationPromenade.cpp.i:
+	$(MAKE) -f CMakeFiles\codeadvent17.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\codeadvent17.dir\day16_PermutationPromenade.cpp.i
+.PHONY : day16_PermutationPromenade.cpp.i
+
+day16_PermutationPromenade.s: day16_PermutationPromenade.cpp.s
+
+.PHONY : day16_PermutationPromenade.s
+
+# target to generate assembly for a file
+day16_PermutationPromenade.cpp.s:
+	$(MAKE) -f CMakeFiles\codeadvent17.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\codeadvent17.dir\day16_PermutationPromenade.cpp.s
+.PHONY : day16_PermutationPromenade.cpp.s
+
+day17_Spinlock.obj: day17_Spinlock.cpp.obj
+
+.PHONY : day17_Spinlock.obj
+
+# target to build an object file
+day17_Spinlock.cpp.obj:
+	$(MAKE) -f CMakeFiles\codeadvent17.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\codeadvent17.dir\day17_Spinlock.cpp.obj
+.PHONY : day17_Spinlock.cpp.obj
+
+day17_Spinlock.i: day17_Spinlock.cpp.i
+
+.PHONY : day17_Spinlock.i
+
+# target to preprocess a source file
+day17_Spinlock.cpp.i:
+	$(MAKE) -f CMakeFiles\codeadvent17.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\codeadvent17.dir\day17_Spinlock.cpp.i
+.PHONY : day17_Spinlock.cpp.i
+
+day17_Spinlock.s: day17_Spinlock.cpp.s
+
+.PHONY : day17_Spinlock.s
+
+# target to generate assembly for a file
+day17_Spinlock.cpp.s:
+	$(MAKE) -f CMakeFiles\codeadvent17.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\codeadvent17.dir\day17_Spinlock.cpp.s
+.PHONY : day17_Spinlock.cpp.s
+
 stdafx.obj: stdafx.cpp.obj
 
 .PHONY : stdafx.obj
@@ -550,6 +685,21 @@ help:
 	@echo ... day12_DigitalPlumber.obj
 	@echo ... day12_DigitalPlumber.i
 	@echo ... day12_DigitalPlumber.s
+	@echo ... day13_PacketScanners.obj
+	@echo ... day13_PacketScanners.i
+	@echo ... day13_PacketScanners.s
+	@echo ... day14_DiskDefragmentation.obj
+	@echo ... day14_DiskDefragmentation.i
+	@echo ... day14_DiskDefragmentation.s
+	@echo ... day15_DuelingGenerators.obj
+	@echo ... day15_DuelingGenerators.i
+	@echo ... day15_DuelingGenerators.s
+	@echo ... day16_PermutationPromenade.obj
+	@echo ... day16_PermutationPromenade.i
+	@echo ... day16_PermutationPromenade.s
+	@echo ... day17_Spinlock.obj
+	@echo ... day17_Spinlock.i
+	@echo ... day17_Spinlock.s
 	@echo ... stdafx.obj
 	@echo ... stdafx.i
 	@echo ... stdafx.s

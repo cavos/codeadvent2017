@@ -10,6 +10,8 @@ set(Boost_USE_MULTITHREADED      ON)
 set(Boost_USE_STATIC_RUNTIME    OFF)
 find_package(Boost 1.65.1)
 
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -Wall")
+
 include_directories(${Boost_INCLUDE_DIRS}) 
 LINK_DIRECTORIES(${Boost_LIBRARY_DIRS})
 
@@ -27,6 +29,10 @@ day10_KnotHash.cpp
 day11_HexEd.cpp
 day12_DigitalPlumber.cpp
 day13_PacketScanners.cpp
+day14_DiskDefragmentation.cpp
+day15_DuelingGenerators.cpp
+day16_PermutationPromenade.cpp
+day17_Spinlock.cpp
 stdafx.cpp)
 
 target_link_libraries(codeadvent17 ${Boost_LIBRARIES})

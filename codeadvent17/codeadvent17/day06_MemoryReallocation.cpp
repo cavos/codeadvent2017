@@ -1,4 +1,6 @@
-#include "stdafx.h"
+#ifndef __linux__
+	#include "stdafx.h"
+#endif
 #include "day06_MemoryReallocation.h"
 
 #include <vector>

@@ -1,4 +1,6 @@
-#include "stdafx.h"
+#ifndef __linux__
+	#include "stdafx.h"
+#endif
 
 #include "day08_RegisterProcessor.h"
 #include <string>
@@ -20,7 +22,7 @@ int RegisterProcessor::compute(std::istream& input) {
     std::map<std::string, int> registerMap;
     std::regex regex("(\\w+) (inc|dec) ([\\-0-9]+) if (\\w+) ([><=!]+) ([\\-0-9]+)");
 
-	int largestElementEver = INT_MIN;
+	int largestElementEver = std::numeric_limits<int>::min();
 
     std::string instructionLine;
     while (std::getline(input, instructionLine)) {

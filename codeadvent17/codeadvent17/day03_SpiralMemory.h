@@ -27,13 +27,13 @@ private:
 	};
 
 	struct State {
-		int data;
-		int step;
+		unsigned data;
+		unsigned step;
 		std::map<std::pair<int, int>, unsigned> memory;
 		int currentX = 0;
 		int currentY = 0;
 
-		State(int data, int step) {
+		State(unsigned data, unsigned step) {
 			this->data = data;
 			this->step = step;
 

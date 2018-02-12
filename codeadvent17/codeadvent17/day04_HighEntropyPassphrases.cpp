@@ -1,4 +1,6 @@
-#include "stdafx.h"
+#ifndef __linux__
+	#include "stdafx.h"
+#endif
 #include "day04_HighEntropyPassphrases.h"
 #include <vector>
 #include <utility>

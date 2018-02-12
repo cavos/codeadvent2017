@@ -1,7 +1,9 @@
 // codeadvent17.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
+#ifndef __linux__
+	#include "stdafx.h"
+#endif
 #include <iostream>
 #include <sstream>
 #include "day01_InverseCaptcha.h"
@@ -50,8 +52,10 @@ int main()
 // 	std::cout << "day14: "  << DiskDefragmentation::compute(std::string("flqrgnkx")).second;
 	std::cout << "day17: " << Spinlock::compute(304) << '\n';
 	std::cout << "day17.2: " << Spinlock::compute_pt2(304) << '\n';
-	
+
+#ifndef __linux__	
 	system("pause");
+#endif
 
     return 0;
 }

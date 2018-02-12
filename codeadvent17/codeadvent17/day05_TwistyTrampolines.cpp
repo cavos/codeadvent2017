@@ -1,4 +1,6 @@
-#include "stdafx.h"
+#ifndef __linux__
+	#include "stdafx.h"
+#endif
 #include "day05_TwistyTrampolines.h"
 
 #include <vector>

@@ -20,6 +20,6 @@ private:
 	static unsigned computeHash(const std::vector<unsigned>& memoryBanks);
 	static void reallocate(std::vector<unsigned>& memoryBanks);
 
-	static void MemoryReallocation::debugPrint(const std::vector<unsigned>& v);
+	static void debugPrint(const std::vector<unsigned>& v);
 };
 

@@ -1,7 +1,7 @@
-#include "day17_Spinlock.h"
 #include <algorithm>
 #include <iostream>
 #include <vector>
+#include "day17_Spinlock.h"
 
 unsigned Spinlock::compute(unsigned stepSize) {
   std::vector<short> buffer;

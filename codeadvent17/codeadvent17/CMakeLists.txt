@@ -49,6 +49,7 @@ day15_DuelingGenerators.cpp
 day16_PermutationPromenade.cpp
 day17_Spinlock.cpp
 day18_Duet.cpp
+day19_seriesOfTubes.cpp
 # stdafx.cpp
 )
 

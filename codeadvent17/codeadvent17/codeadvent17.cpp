@@ -21,6 +21,7 @@
 #include "day14_DiskDefragmentation.h"
 #include "day17_Spinlock.h"
 #include "day18_Duet.h"
+#include "day19_SeriesOfTubes.h"
 
 int main()
 {
@@ -56,9 +57,11 @@ int main()
 	// std::cout << "day17: " << Spinlock::compute(304) << '\n';
 	// std::cout << "day17.2: " << Spinlock::compute_pt2(304) << '\n';
 
-std::stringstream d18in("snd 1\nsnd 2\nsnd p\nrcv a\nrcv b\nrcv c\nrcv d");
-	std::cout << "day18: " << Duet::compute_pt2(Duet::test_input) << '\n';
+// std::stringstream d18in("snd 1\nsnd 2\nsnd p\nrcv a\nrcv b\nrcv c\nrcv d");
+// 	std::cout << "day18: " << Duet::compute_pt2(Duet::test_input) << '\n';
 	// std::cout << "day18: " << Duet::compute_pt2(d18in) << '\n';
+	auto d19in = std::ifstream("day19_input.txt");
+	std::cout << "day19: " << SeriesOfTubes::compute(d19in);
 
 #ifndef __linux__	
 	system("pause");

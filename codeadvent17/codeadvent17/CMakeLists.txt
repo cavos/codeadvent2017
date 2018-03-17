@@ -48,6 +48,7 @@ day14_DiskDefragmentation.cpp
 day15_DuelingGenerators.cpp
 day16_PermutationPromenade.cpp
 day17_Spinlock.cpp
+day18_Duet.cpp
 # stdafx.cpp
 )
 

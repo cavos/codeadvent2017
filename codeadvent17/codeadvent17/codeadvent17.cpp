@@ -20,6 +20,7 @@
 #include "day12_DigitalPlumber.h"
 #include "day14_DiskDefragmentation.h"
 #include "day17_Spinlock.h"
+#include "day18_Duet.h"
 
 int main()
 {
@@ -49,12 +50,20 @@ int main()
 // 	auto day12 = DigitalPlumber::compute(std::ifstream(DigitalPlumber::testInput));
 // 	std::cout << "day12: " << day12.first << "\n";
 // 	std::cout << "day12.2: " << day12.second << "\n";
-// 	std::cout << "day14: "  << DiskDefragmentation::compute(std::string("flqrgnkx")).second;
-	std::cout << "day17: " << Spinlock::compute(304) << '\n';
-	std::cout << "day17.2: " << Spinlock::compute_pt2(304) << '\n';
+	// auto d14 = DiskDefragmentation::compute(std::string("flqrgnkx"));
+	// std::cout << "day14-1: "  << d14.first << '\n';
+ 	// std::cout << "day14-2: "  << d14.second << '\n';
+	// std::cout << "day17: " << Spinlock::compute(304) << '\n';
+	// std::cout << "day17.2: " << Spinlock::compute_pt2(304) << '\n';
+
+std::stringstream d18in("snd 1\nsnd 2\nsnd p\nrcv a\nrcv b\nrcv c\nrcv d");
+	std::cout << "day18: " << Duet::compute_pt2(Duet::test_input) << '\n';
+	// std::cout << "day18: " << Duet::compute_pt2(d18in) << '\n';
 
 #ifndef __linux__	
 	system("pause");
+#else
+	std::cout << '\n';
 #endif
 
     return 0;

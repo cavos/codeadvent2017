@@ -22,6 +22,7 @@
 #include "day17_Spinlock.h"
 #include "day18_Duet.h"
 #include "day19_SeriesOfTubes.h"
+#include "day20_ParticleSwarm.hpp"
 
 int main()
 {
@@ -60,8 +61,11 @@ int main()
 // std::stringstream d18in("snd 1\nsnd 2\nsnd p\nrcv a\nrcv b\nrcv c\nrcv d");
 // 	std::cout << "day18: " << Duet::compute_pt2(Duet::test_input) << '\n';
 	// std::cout << "day18: " << Duet::compute_pt2(d18in) << '\n';
-	auto d19in = std::ifstream("day19_input.txt");
-	std::cout << "day19: " << SeriesOfTubes::compute(d19in);
+	// auto d19in = std::ifstream("day19_input.txt");
+	// std::cout << "day19: " << SeriesOfTubes::compute(d19in);
+	std::stringstream d20test("p=<3,0,0>, v=<2,0,0>, a=<-1,0,0>\np=<4,0,0>, v=<0,0,0>, a=<-2,0,0>");
+	auto d20input = std::ifstream("day20_input.txt");
+	std::cout << "day20: " << ParticleSwarm::compute_pt2(d20input);
 
 #ifndef __linux__	
 	system("pause");
